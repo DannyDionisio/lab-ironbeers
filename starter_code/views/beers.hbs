@@ -1,0 +1,22 @@
+<div class="navbar">
+  <ul>
+    <li href="">Home</li>
+    <li href="/beers">Beers</li>
+    <li href="/random-beers">Random Beer</li>
+  </ul>
+</div>
+<div class="beers">
+  {{#each beers}}
+  <div class="beer">
+    <img src="{{ this.image_url }}"/>
+    <div class="description">
+      <h1>{{ this.name }}</h1>
+      <h2>{{ this.tagline }}</h2>
+      <p>{{ this.description }}</p>
+    </div>
+  </div>
+  {{/each}}
+</div>
+<div class="footer">
+  <h2>Develop by Ironhack ;)</h2>
+</div>

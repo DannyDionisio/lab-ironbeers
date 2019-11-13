@@ -8,15 +8,8 @@ body {
   background-color: #2081c3;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  margin: auto;
+.navbar a {
   color: #f7f9f9;
-}
-
-.navbar li {
-  padding: 10px;
 }
 
 .container-beer {
@@ -38,4 +31,38 @@ button {
 .footer h2 {
   font-size: 15px;
   margin: 0;
+}
+
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+  margin: 70px 75px;
+}
+
+.beer img {
+  width: 100px;
+}
+
+.description {
+}
+
+.beer h1 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.beer h2 {
+  font-size: 20px;
+  color: #cccccc;
+}
+
+.beer p {
+  font-size: 15px;
 }

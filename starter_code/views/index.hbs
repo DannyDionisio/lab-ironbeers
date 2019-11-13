@@ -7,18 +7,12 @@
     <link rel="stylesheet" href="../stylesheets/styles.css"/>
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li href="">Home</li>
-        <li href="/beers">Beers</li>
-        <li href="/random-beers">Random Beer</li>
-      </ul>
-    </div>
+    {{> navbar }}
     <div class="container-beer">
       <img src="images/beer.png" width="50" height="50"/>
       <div class="buttons">
-        <button type="button" class="btn btn-primary">Check the Beers!</button>
-        <button type="button" class="btn btn-primary">Check a Random Beer</button>
+        <a href="/beers" class="btn btn-primary">Check the Beers!</a>
+        <a href="/random-beers" class="btn btn-primary">Check a Random Beer</a>
       </div>
     </div>
     <div class="footer">
