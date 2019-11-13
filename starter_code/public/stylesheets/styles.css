@@ -1,7 +1,41 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: #2081c3;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  color: #f7f9f9;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.container-beer {
+  background-color: rgba(145, 145, 145, 0.481);
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 20px;
+}
+
+.footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 20px;
+}
+
+.footer h2 {
+  font-size: 15px;
+  margin: 0;
+}
