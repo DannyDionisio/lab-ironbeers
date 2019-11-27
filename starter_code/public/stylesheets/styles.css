@@ -2,67 +2,134 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(145, 145, 145, 0.481);
 }
+
+/*Index*/
 
 .navbar {
   background-color: #2081c3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 50px;
 }
 
 .navbar a {
   color: #f7f9f9;
+  padding: 0 15px;
 }
 
 .container-beer {
-  background-color: rgba(145, 145, 145, 0.481);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 30px 0;
 }
 
-button {
-  margin: 20px;
+.container-beer img {
+  margin-bottom: 30px;
 }
 
-.footer {
-  background-color: #0a2c42;
-  color: #f7f9f9;
-  padding: 20px;
+.buttons {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer h2 {
-  font-size: 15px;
-  margin: 0;
+.button-beer a {
+  background-color: #2081c3;
+  margin-top: 20px;
 }
+
+.button-random a {
+  background-color: #2081c3;
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+
+/*beers list*/
 
 .beers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 70px;
+  align-items: baseline;
 }
 
 .beer {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  align-items: center;
-  margin: 70px 75px;
+  width: 30%;
+  margin: 25px;
 }
 
 .beer img {
   width: 100px;
+  max-width: fit-content;
+  align-self: center;
 }
 
-.description {
-}
-
-.beer h1 {
+.description h1 {
+  font-weight: bolder;
   font-size: 25px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
-.beer h2 {
+.description h2 {
   font-size: 20px;
   color: #cccccc;
 }
 
-.beer p {
+.description p {
   font-size: 15px;
+}
+
+/*Beer random*/
+.beer-random {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  margin: 25px;
+}
+
+.beer-random img {
+  width: 10%;
+  margin: 20px 50px;
+}
+
+.description-random {
+  padding: 80px 100px;
+}
+
+.description-random h1 {
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+.description-random h2 {
+  font-size: 20px;
+  color: #cccccc;
+}
+
+.description-random p {
+  font-size: 15px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 20px;
+
+  margin-top: auto;
+}
+
+.footer h2 {
+  font-size: 15px;
+  margin: 0;
 }
